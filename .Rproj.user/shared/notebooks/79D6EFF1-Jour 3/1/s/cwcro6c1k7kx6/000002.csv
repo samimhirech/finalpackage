@@ -1,0 +1,8 @@
+"0","```r
+moyenne <- function(x) {
+  result <- mean(x[!is.na(x)])
+  return(result)
+}
+
+moyenne(c(1,2,2,4,NA))
+```"

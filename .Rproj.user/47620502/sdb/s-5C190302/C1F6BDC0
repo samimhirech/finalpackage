@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' My csv reader\n#'\n#' @param x a path\n#'\n#' @return this returns the csv file\n#' @import assertthat\n#' @export\n#'\n#'\n#'\n\nmy_csv_reader <- function(x) {\n  assert_that(is.dir(x))\n  liste <- list.files(path = x,full.names = TRUE)\n  result <- list()\n  for (i in (1:length(liste))) {\n    result <- list(read.csv(liste[i], header = TRUE, sep = \";\", dec = \".\"))\n  }\n  return(result)\n}\n",
+    "created" : 1508090880334.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1985425746",
+    "id" : "C1F6BDC0",
+    "lastKnownWriteTime" : 1508093258,
+    "last_content_update" : 1508093258059,
+    "path" : "~/Desktop/X_2017/finalpackage/R/my_csv_reader.R",
+    "project_path" : "R/my_csv_reader.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

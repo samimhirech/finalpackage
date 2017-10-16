@@ -1,0 +1,36 @@
+---
+title: "The X-HEC functions package"
+author: "Sami Mhirech"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The objective of this vignette is to explain the different functions we have built during R classes with ThinkR professors Diane and Vincent. 
+
+## Save as csv
+
+This function allows every user to save a dataset as a csv file. This can be very useful is you need to deliver a csv file for Excel users for example. 
+
+## Draw a name 
+
+This function draws popularity graphes for names from the beginning of the XXth century to today. The function takes two arguments : the name and the sex ("F" for Female and "M" for male).
+
+## Draw names
+
+If you want to compare the popularity accross time of different names, this function is for you. You just need one parameter : a vector containing as many names you want to compare.
+
+## Multi excel 
+
+Importing excel sheets can be sometimes difficult : multi_excel makes it easy for you. Just put your excel file as a parameter to this function and all its sheets will be imported. 
+
+## My csv reader
+
+If you need to read csv files, this functions is the one you needed. You only need to put as a parameter to your function the path to your csv file. 
+
+
+
+

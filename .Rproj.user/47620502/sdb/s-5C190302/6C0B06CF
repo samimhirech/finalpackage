@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: finalpackage\nType: Package\nTitle: Some functions\nVersion: 0.1.0\nAuthor: Sami Mhirech\nMaintainer: Sami Mhirech <sami.mhirech@hec.edu>\nDescription: Allows to save as csv, to read excel sheets and csv files, to draw graph about names.\nLicense: CGL-3\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 6.0.1\nImports: ggplot2,\n    prenoms,\n    tidyr,\n    dplyr,\n    magrittr,\n    readxl,\n    assertthat\nSuggests: knitr,\n    rmarkdown\nVignetteBuilder: knitr\n",
+    "created" : 1508090050605.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4217638802",
+    "id" : "6C0B06CF",
+    "lastKnownWriteTime" : 1508094072,
+    "last_content_update" : 1508094072,
+    "path" : "~/Desktop/X_2017/finalpackage/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

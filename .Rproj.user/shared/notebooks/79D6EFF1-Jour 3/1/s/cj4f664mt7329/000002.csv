@@ -1,0 +1,8 @@
+"0","```r
+day <- Sys.Date()
+if (day == \"2017-10-04\") {
+print(\"We are October the 4th\")
+} else {
+print(\"We are not October the 4th\")
+}
+```"

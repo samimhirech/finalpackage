@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Save as csv\n#'\n#' @param dataset is a dataset\n#' @param filename is a file name\n#' @param row.names is FALSE\n#' @param ... is what you want\n#'\n#'\n#' @return a csv file\n#'\n#' @import assertthat\n#' @import magrittr\n#'\n#' @export\n#'\n\nsave_as_csv <- function(dataset,filename, row.names = FALSE, ...) {\n  assert_that(has_extension(filename,\"csv\"))\n  assert_that(is.dir(dirname(filename)))\n  assert_that(is.writeable(dirname(filename)))\n  assert_that(not_empty(dataset))\n  assert_that(is.data.frame(dataset))\n\n  write.csv2(dataset, file = filename, row.names = row.names, ...)\n\n  invisible(normalizePath(filename))\n}\n",
+    "created" : 1508091177298.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "95163775",
+    "id" : "19A38F5A",
+    "lastKnownWriteTime" : 1508142057,
+    "last_content_update" : 1508142057095,
+    "path" : "~/Desktop/X_2017/finalpackage/R/save_as_csv.R",
+    "project_path" : "R/save_as_csv.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

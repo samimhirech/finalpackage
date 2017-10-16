@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Multi Excel\n#'\n#' @param file is a file\n#'\n#' @return the sheets of an excel file\n#' @import readxl\n#' @import assertthat\n#' @export\n#'\n#'\n\nmulti_excel <- function(file) {\n  assert_that(has_extension(file,\"xlsx\") | has_extension(file,\"xls\"))\n  all_sheets <- excel_sheets(file)\n  result <- lapply(all_sheets,function(sheet) {\n    read_excel(file,sheet = sheet)\n  })\n  return(result)\n}\n",
+    "created" : 1508090703704.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3172388211",
+    "id" : "9FE34338",
+    "lastKnownWriteTime" : 1508093929,
+    "last_content_update" : 1508093929639,
+    "path" : "~/Desktop/X_2017/finalpackage/R/multi_excel.R",
+    "project_path" : "R/multi_excel.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

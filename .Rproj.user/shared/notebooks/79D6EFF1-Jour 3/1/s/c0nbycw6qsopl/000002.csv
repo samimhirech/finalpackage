@@ -1,0 +1,13 @@
+"0","```r
+complet_bonus <- function(x,verbose) {
+  result_1 <- mean(x[!is.na(x)])
+  result_2 <- var(x[!is.na(x)]) 
+  if (verbose) {
+    return(cat(\"the mean is\",result_1,\"and the variance is\",result_2))
+  } else {
+    return(c(result_1,result_2))
+  }
+}
+
+complet_bonus(c(1,2,2,4,NA),TRUE)
+```"

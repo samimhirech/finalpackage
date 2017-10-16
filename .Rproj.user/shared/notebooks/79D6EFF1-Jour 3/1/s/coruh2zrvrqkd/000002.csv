@@ -1,0 +1,12 @@
+"0","```r
+library(readxl)
+my_excel_reader <- function(x) {
+  length(excel_sheets(x))
+  for (i in (1:length(excel_sheets(x)))) {
+     result[i] <- list(read_excel(x, sheet = i))
+  }
+  return(result)
+}
+
+my_excel_reader(\"Jour 3/excel_folder/exercice7base.xlsx\")
+```"

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Draw names\n#'\n#' @param names a vector of names\n#'\n#' @return the graph of the popularity of your names\n#'\n#' @import ggplot2\n#' @import prenoms\n#' @import dplyr\n#' @import tidyr\n#' @import assertthat\n#'\n#' @export\n#'\n\ndraw_names <- function(names) {\n  assert_that(is.character(names))\n  dataset_first <- prenoms::prenoms %>%\n    filter(name %in% names ) %>%\n    group_by(name,year) %>%\n    summarise(total = sum(n))\n\n  ggplot(dataset_first,\n         aes(x = year, y = total, color = name)) +\n    geom_line()\n}\n",
+    "created" : 1508093954601.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2726540058",
+    "id" : "7E0F9442",
+    "lastKnownWriteTime" : 1508142104,
+    "last_content_update" : 1508142104246,
+    "path" : "~/Desktop/X_2017/finalpackage/R/draw_names.R",
+    "project_path" : "R/draw_names.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

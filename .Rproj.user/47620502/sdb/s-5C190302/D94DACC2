@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Draw a name\n#'\n#' @param the_name is a name\n#' @param the_sex is either \"F\" or \"M\"\n#'\n#' @return the graph of the popularity of the name accross history\n#'\n#' @import ggplot2\n#' @import prenoms\n#' @import dplyr\n#' @import tidyr\n#' @import magrittr\n#' @import assertthat\n#'\n#' @export\ndraw_a_name <- function(the_name,the_sex) {\n  assert_that(is.character(the_name))\n  assert_that(is.character(the_sex))\n  assert_that(the_sex == \"F\" | the_sex == \"M\")\n  dataset <- prenoms::prenoms %>%\n    filter(name == the_name, sex == the_sex) %>%\n    group_by(name,year) %>%\n    summarise(total = sum(n))\n  ggplot(dataset,\n         aes(x = year, y = total)) +\n    geom_line() +\n    ggtitle(the_name)\n}\n",
+    "created" : 1508090414213.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3761285675",
+    "id" : "D94DACC2",
+    "lastKnownWriteTime" : 1508141665,
+    "last_content_update" : 1508141665564,
+    "path" : "~/Desktop/X_2017/finalpackage/R/draw_a_name.R",
+    "project_path" : "R/draw_a_name.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

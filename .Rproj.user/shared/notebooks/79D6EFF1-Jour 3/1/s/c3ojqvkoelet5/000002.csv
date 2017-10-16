@@ -1,0 +1,8 @@
+"0","```r
+# MARGIN = 1 for row, 2 for col
+# FUN = the name of the function to apply
+
+data(iris)
+for (i in 1:4){print(mean(iris[,i]))}
+apply(iris[,1:4], MARGIN = 2, FUN = mean)
+```"

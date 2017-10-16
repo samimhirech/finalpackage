@@ -1,0 +1,10 @@
+"0","```r
+complet <- function(x) {
+  result_1 <- mean(x[!is.na(x)])
+  result_2 <- var(x[!is.na(x)])
+  result <- c(result_1,result_2)
+  return(result)
+}
+
+complet(c(1,2,2,4,NA))
+```"

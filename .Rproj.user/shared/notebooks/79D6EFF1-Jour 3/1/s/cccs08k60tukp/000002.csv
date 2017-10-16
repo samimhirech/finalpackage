@@ -1,0 +1,11 @@
+"0","```r
+read_excel_multi <- function(file) {
+  all_sheets <- readxl::excel_sheets(file)
+  result <- lapply(all_sheets,function(sheet) {
+    readxl::read_excel(file,sheet = sheet)
+  })
+  return(result)
+}
+
+read_excel_multi(\"Jour 3/excel_folder/exercice7base.xlsx\")
+```"
